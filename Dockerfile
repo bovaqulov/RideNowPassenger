@@ -11,7 +11,7 @@ RUN apk add --no-cache gcc musl-dev libffi-dev postgresql-dev
 COPY requirements.txt .
 
 # gunicorn ham o‘rnatiladi
-RUN pip install --upgrade pip && pip install -r requirements.txt && pip install gunicorn whitenoise
+RUN pip install --upgrade pip && pip install -r --no-cache requirements.txt
 
 COPY . .
 
