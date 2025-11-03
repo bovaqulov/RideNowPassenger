@@ -26,8 +26,10 @@ SECRET_KEY = "django-insecure-)q--it3x@0!e7s!#_w)2s*^165e!c04(4!fvn9*wcaq-)j&m1g
 DEBUG = True
 
 BASE_URL = "5586dce74993.ngrok-free.app"
+DEPLOY_URL = "ridenowpassenger-production.up.railway.app"
 
 ALLOWED_HOSTS = [
+    DEPLOY_URL,
     BASE_URL,
     "localhost",
     "127.0.0.1",

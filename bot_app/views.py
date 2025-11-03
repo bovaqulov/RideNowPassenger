@@ -38,3 +38,18 @@ def set_web(request):
         "passenger_webhook":str(bot.get_webhook_info()),
         "info": str(bot.get_me())
     })
+
+@csrf_exempt
+def set_deploy(request):
+
+    p_url = f"https://{settings.DEPLOY_URL}/bot/webhook/deploy/"
+
+    bot.delete_webhook()
+
+    bot.set_webhook(url=p_url)
+
+    return JsonResponse({
+        "passenger_webhook":str(bot.get_webhook_info()),
+        "info": str(bot.get_me())
+    })
+
