@@ -1,8 +1,8 @@
 from telebot.states.sync import StateContext
 from telebot.types import CallbackQuery, Message
 
-from bot_app.passenger_bot.buttons.inline import create_inl
-from bot_app.passenger_bot.sender.text_sender import send_msg
+from bot_app.passenger_bot.functions.buttons.inline import create_inl
+from bot_app.passenger_bot.functions.text_sender import send_msg
 
 
 def language(msg: CallbackQuery | Message, state: StateContext):

@@ -1,16 +1,13 @@
-from django.conf import settings
 from telebot.states.sync import StateContext
 from telebot.types import CallbackQuery
 
-from ....buttons.inline import create_inl
-from ....core.loader import bot
-from ....editor.text_edit import edit_msg
-from ....sender.text_sender import send_msg
-from .....repo.user_service import BotUserService
+from bot_app.passenger_bot.functions.text_edit import edit_msg
+from bot_app.passenger_bot.functions.buttons.inline import create_inl
+from bot_app.passenger_bot.functions.text_sender import send_msg
+from bot_app.repo.user_service import BotUserService
 
 
 
-@bot.callback_query_handler(func=lambda call: call.data in settings.BOT_LANGUAGE)
 def callback_language(call: CallbackQuery, state: StateContext):
     state.delete()
     try:

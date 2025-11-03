@@ -1,12 +1,10 @@
 from telebot.states.sync import StateContext
 from telebot.types import Message
 
-from .....repo.user_service import BotUserService
-from ....core.loader import bot
-
-from ..utils.pages.language_page import language
-from ..utils.pages.main_menu_page import main_menu
-
+from ..pages.language_page import language
+from ..pages.main_menu_page import main_menu
+from bot_app.repo.user_service import BotUserService
+from bot_app.passenger_bot.core.loader import bot
 
 
 @bot.message_handler(commands=['start'])

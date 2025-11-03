@@ -25,12 +25,14 @@ SECRET_KEY = "django-insecure-)q--it3x@0!e7s!#_w)2s*^165e!c04(4!fvn9*wcaq-)j&m1g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-BASE_URL = "5586dce74993.ngrok-free.app"
+DEMO_URL = "5586dce74993.ngrok-free.app"
 DEPLOY_URL = "ridenowpassenger-production.up.railway.app"
+VERSION = "api/v1/"
+MAIN_URL = f"http://127.0.0.1:8001/{VERSION}"
 
 ALLOWED_HOSTS = [
     DEPLOY_URL,
-    BASE_URL,
+    DEMO_URL,
     "localhost",
     "127.0.0.1",
 ]
@@ -146,6 +148,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 PASSENGER_BOT_TOKEN = "8329585152:AAGGXtfimeH273d4TfYy6f1QJvbJWxuaNm4"
+# PASSENGER_BOT_TOKEN = "8079825790:AAFda-dplFu1rmXXiFCXm7mr6TOhLpMMp5c"
 CACHE_TIMEOUT = 3600
 
 BOT_LANGUAGE = ["uz", "en", "ru"]

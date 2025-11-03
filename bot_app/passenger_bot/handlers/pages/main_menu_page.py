@@ -1,9 +1,9 @@
 from telebot.states.sync import StateContext
 from telebot.types import Message, CallbackQuery
 
-from bot_app.passenger_bot.buttons.inline import create_inl
-from bot_app.passenger_bot.editor.text_edit import edit_msg
-from bot_app.passenger_bot.sender.text_sender import send_msg
+from bot_app.passenger_bot.functions.buttons.inline import create_inl
+from bot_app.passenger_bot.functions.text_edit import edit_msg
+from bot_app.passenger_bot.functions.text_sender import send_msg
 
 
 def main_menu(msg: Message | CallbackQuery, state: StateContext):

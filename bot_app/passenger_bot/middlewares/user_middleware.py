@@ -6,7 +6,7 @@ from django.conf import settings
 from bot_app.models import TelegramUser
 import time
 
-from bot_app.passenger_bot.sender.text_sender import send_msg
+from bot_app.passenger_bot.functions.text_sender import send_msg
 
 
 class UserMiddleware(BaseMiddleware):

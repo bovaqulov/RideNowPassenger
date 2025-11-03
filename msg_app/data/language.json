@@ -211,7 +211,30 @@
   "uz": "⚠️ Kechirasiz, biz faqat <b>O‘zbekiston hududida</b> sayohatlarni amalga oshiramiz.",
   "ru": "⚠️ Извините, мы работаем только <b>на территории Узбекистана</b>.",
   "en": "⚠️ Sorry, we only operate <b>within Uzbekistan</b>."
+},"_help": {
+  "uz": "🆘 <b>Yordam markazi</b>\n\nAssalomu alaykum! 👋\nAgar sizda biror savol yoki muammo bo‘lsa, quyidagi yo‘nalishlardan birini tanlang:\n\n📞 <b>Aloqa:</b> qo‘llab-quvvatlash jamoamiz bilan bog‘laning.\n💳 <b>To‘lov:</b> Payme, Click yoki naqd to‘lov bilan bog‘liq savollar.\n🚗 <b>Safar:</b> buyurtma, yo‘nalish yoki haydovchi bilan bog‘liq muammolar.\n📦 <b>Pochta:</b> yuborilgan yukni kuzatish yoki yetkazib berish holatini tekshirish.\n\n📬 Biz sizga imkon qadar tez javob beramiz. Rahmat! 🙏",
+
+  "ru": "🆘 <b>Центр помощи</b>\n\nЗдравствуйте! 👋\nЕсли у вас есть вопросы или проблемы, выберите одну из категорий ниже:\n\n📞 <b>Связь:</b> свяжитесь с нашей службой поддержки.\n💳 <b>Оплата:</b> вопросы по Payme, Click или наличным платежам.\n🚗 <b>Поездка:</b> проблемы с заказом, маршрутом или водителем.\n📦 <b>Посылка:</b> отслеживание и доставка отправлений.\n\n📬 Мы ответим вам как можно скорее. Спасибо! 🙏",
+
+  "en": "🆘 <b>Help Center</b>\n\nHello! 👋\nIf you have any questions or issues, please choose one of the following options:\n\n📞 <b>Support:</b> contact our help team.\n💳 <b>Payment:</b> questions about Payme, Click, or cash payments.\n🚗 <b>Trip:</b> issues with booking, routes, or drivers.\n📦 <b>Parcel:</b> track or check the delivery status.\n\n📬 We'll get back to you as soon as possible. Thank you! 🙏"
+},"driver_found": {
+  "uz": "✨ <b>Haydovchi topildi!</b> 🚗<br><br>Quyidagi ma’lumotlarni ko‘rib chiqing:<br><br>👨‍✈️ <b>Haydovchi:</b> {name}<br>🚘 <b>Avtomobil:</b> {car}<br>⏱ <b>Yetib kelish vaqti:</b> {eta} daqiqa ichida<br><br>Iltimos, mashinani kutish joyingizda tayyor bo‘ling.",
+
+  "en": "✨ <b>Driver found!</b> 🚗<br><br>Please review the following details:<br><br>👨‍✈️ <b>Driver:</b> {name}<br>🚘 <b>Car:</b> {car}<br>⏱ <b>Estimated arrival:</b> in {eta} minutes<br><br>Please be ready at your pickup location.",
+
+  "ru": "✨ <b>Водитель найден!</b> 🚗<br><br>Проверьте следующие данные:<br><br>👨‍✈️ <b>Водитель:</b> {name}<br>🚘 <b>Автомобиль:</b> {car}<br>⏱ <b>Прибудет через:</b> {eta} минут<br><br>Пожалуйста, будьте готовы на месте посадки."
+},"call_driver": {
+  "uz": "📞 Haydovchiga qo‘ng‘iroq qilish",
+  "en": "📞 Call the driver",
+  "ru": "📞 Позвонить водителю"
+},"message_driver": {
+  "uz": "💬 Haydovchiga xabar yuborish",
+  "en": "💬 Message the driver",
+  "ru": "💬 Написать водителю"
 }
+
+
+
 
 
 

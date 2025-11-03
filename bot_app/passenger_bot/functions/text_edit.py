@@ -2,9 +2,9 @@ from queue import Queue, Full
 from threading import Thread
 from concurrent.futures import ThreadPoolExecutor
 from telebot.types import Message, CallbackQuery
-from ...repo.user_service import BotUserService
+from bot_app.repo.user_service import BotUserService
 from msg_app.models import BotMessage
-from ..core.loader import bot
+from bot_app.passenger_bot.core.loader import bot
 
 # ================= GLOBAL SETTINGS ================= #
 MAX_QUEUE_SIZE = 3_000

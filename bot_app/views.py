@@ -28,7 +28,7 @@ def telegram_passenger_bot(request):
 @csrf_exempt
 def set_web(request):
 
-    p_url = f"https://{settings.BASE_URL}/bot/webhook/"
+    p_url = f"https://{settings.DEMO_URL}/bot/webhook/"
 
     bot.delete_webhook()
 
