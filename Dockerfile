@@ -1,25 +1,55 @@
+# ===========================================
+# 1. Asosiy imij
+# ===========================================
 FROM python:3.10-alpine
 
+# Ishchi katalog
 WORKDIR /app
 
+# Python konfiguratsiyasi
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# PostgreSQL va build tools
-RUN apk add --no-cache gcc musl-dev libffi-dev postgresql-dev
+# ===========================================
+# 2. Build tools va PostgreSQL uchun kerakli kutubxonalar
+# ===========================================
+RUN apk add --no-cache \
+    gcc \
+    musl-dev \
+    libffi-dev \
+    postgresql-dev \
+    python3-dev \
+    jpeg-dev \
+    zlib-dev \
+    bash
 
+# ===========================================
+# 3. Kutubxonalarni o‘rnatish
+# ===========================================
 COPY requirements.txt .
 
-# gunicorn ham o‘rnatiladi
-RUN pip install --upgrade pip && pip install -r --no-cache requirements.txt
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install gunicorn
 
+# ===========================================
+# 4. Loyihani ko‘chirish
+# ===========================================
 COPY . .
 
-RUN python manage.py collectstatic --noinput
-RUN python manage.py makemigrations
-RUN python manage.py migrate
-RUN python manage.py set_message || true
-RUN python manage.py createsuper || true
-
-# Gunicorn orqali ishga tushirish
-CMD ["gunicorn", "ridebot_passenger.wsgi:application", "--bind", "0.0.0.0:8000"]
+# ===========================================
+# 5. Ishga tushirish jarayonlari (hammasi shu yerda)
+# ===========================================
+# ⬇️ collectstatic, migrate, custom commands, va gunicorn bir joyda
+CMD \
+    echo "📦 Migratsiyalarni yaratish..." && \
+    python manage.py makemigrations --noinput && \
+    echo "📂 Migratsiyalarni qo‘llash..." && \
+    python manage.py migrate --noinput && \
+    echo "🎨 Statik fayllarni yig‘ish..." && \
+    python manage.py collectstatic --noinput && \
+    echo "💬 Custom komandalar ishga tushmoqda..." && \
+    (python manage.py set_message || true) && \
+    (python manage.py createsuper || true) && \
+    echo "🚀 Gunicorn ishga tushmoqda..." && \
+    gunicorn ridebot_passenger.wsgi:application --bind 0.0.0.0:8000 --workers 3
