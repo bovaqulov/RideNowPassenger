@@ -1,0 +1,10 @@
+[project]
+name = "passengerridebot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "django-stubs>=5.2.7",
+    "pytelegrambotapi>=4.29.1",
+]
