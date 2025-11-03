@@ -5,18 +5,20 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
+# PostgreSQL va build tools
 RUN apk add --no-cache gcc musl-dev libffi-dev postgresql-dev
 
 COPY requirements.txt .
 
-RUN pip install --upgrade pip && pip install -r requirements.txt
+# gunicorn ham o‘rnatiladi
+RUN pip install --upgrade pip && pip install -r requirements.txt && pip install gunicorn
 
 COPY . .
 
 RUN python manage.py makemigrations
 RUN python manage.py migrate
-RUN python manage.py set_message
-RUN python manage.py createsuper
+RUN python manage.py set_message || true
+RUN python manage.py createsuper || true
 
-# ⚙️ Production server: Gunicorn
+# Gunicorn orqali ishga tushirish
 CMD ["gunicorn", "ridebot_passenger.wsgi:application", "--bind", "0.0.0.0:8000"]

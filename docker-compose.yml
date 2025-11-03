@@ -1,24 +1,12 @@
 services:
   web:
     build: .
-    command: "python manage.py runserver"
-    volumes:
-      - .:/app
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env
     depends_on:
       - db
-
+    command: gunicorn ridebot_passenger.wsgi:application --bind 0.0.0.0:8000
   db:
     image: postgres:15
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
     environment:
-      POSTGRES_DB: django_db
-      POSTGRES_USER: django_user
-      POSTGRES_PASSWORD: django_pass
-
-volumes:
-  postgres_data:
+      POSTGRES_DB: ridebot
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
