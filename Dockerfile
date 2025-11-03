@@ -11,10 +11,11 @@ RUN apk add --no-cache gcc musl-dev libffi-dev postgresql-dev
 COPY requirements.txt .
 
 # gunicorn ham o‘rnatiladi
-RUN pip install --upgrade pip && pip install -r requirements.txt && pip install gunicorn
+RUN pip install --upgrade pip && pip install -r requirements.txt && pip install gunicorn whitenoise
 
 COPY . .
 
+RUN python manage.py collectstatic --noinput
 RUN python manage.py makemigrations
 RUN python manage.py migrate
 RUN python manage.py set_message || true

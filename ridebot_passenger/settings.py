@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # ⬅️ bu joyda
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -126,8 +127,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR / "static/"
+# ✅ Static fayllar
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # <-- muhim
+
+# Agar kerak bo‘lsa (devda ishlatish uchun)
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+# ✅ Media fayllar (agar ishlatayotgan bo‘lsangiz)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
@@ -138,3 +149,4 @@ PASSENGER_BOT_TOKEN = "8329585152:AAGGXtfimeH273d4TfYy6f1QJvbJWxuaNm4"
 CACHE_TIMEOUT = 3600
 
 BOT_LANGUAGE = ["uz", "en", "ru"]
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
