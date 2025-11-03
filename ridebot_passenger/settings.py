@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-)q--it3x@0!e7s!#_w)2s*^165e!c04(4!fvn9*wcaq-)j&m1g"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 BASE_URL = "5586dce74993.ngrok-free.app"
 DEPLOY_URL = "ridenowpassenger-production.up.railway.app"
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://ridenowpassenger-production.up.railway.app']
 
 # Application definition
 
