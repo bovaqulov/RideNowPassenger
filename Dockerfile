@@ -18,4 +18,4 @@ RUN python manage.py migrate
 RUN python manage.py set_message
 RUN python manage.py createsuper
 
-CMD ["gunicorn", "ridebot_passenger.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver"]
