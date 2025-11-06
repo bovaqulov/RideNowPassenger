@@ -144,7 +144,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://default:MheXznUwqpygZaEzocsPbhYuFCZSALcH@redis.railway.internal:6379",
+        "LOCATION": "redis://default:MheXznUwqpygZaEzocsPbhYuFCZSALcH@caboose.proxy.rlwy.net:47539",
         "OPTIONS": {"CLIENT_CLASS": "django_redis.client.DefaultClient"},
         "TIMEOUT": 3600,
     }
