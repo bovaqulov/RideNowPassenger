@@ -4,14 +4,16 @@ from telebot.types import Update
 
 from django.conf import settings
 
-from bot_app.passenger_bot.core.loader import bot
+from bot_app.core.loader import bot
 import logging
 
-from bot_app.passenger_bot.middlewares.user_middleware import UserMiddleware
+from .handlers import *
+
+from bot_app.middlewares.user_middleware import UserMiddleware
 bot.setup_middleware(UserMiddleware(flood_limit=0.87))
 logger = logging.getLogger(__name__)
 
-from bot_app.passenger_bot import handlers
+
 
 @csrf_exempt
 def telegram_passenger_bot(request):

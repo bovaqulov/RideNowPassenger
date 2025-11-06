@@ -160,93 +160,99 @@
     "en": "✈️ <b>Select trip type:</b>\n\n🚗 <b>Start a ride now</b> – set your location, and a driver will take you quickly and safely.\n\n🕒 <b>Plan a trip</b> – enter time and destinations, and we’ll prepare a driver for you.\n\n📦 <b>Send a parcel</b> – reliable delivery between two addresses."
   },
   "trip_start_prompt": {
-  "uz": "📍 Sayohatni qayerdan boshlaymiz?\n\nO‘zingiz turgan shahar nomini yozing (Masalan: Samarqand).\nShaharni tanlash bo‘limidan tanlang yoki aniq joylashuvingizni yuboring.",
-  "ru": "📍 С чего начнём поездку?\n\nНапишите название города, где вы находитесь (например: Самарканд).\nВыберите его в разделе выбора города или отправьте свою точную геолокацию.",
-  "en": "📍 Where shall we start the trip?\n\nType the name of your city (e.g., Samarkand), choose it from the city selection section, or send your exact location."
-},"send_location": {
-  "uz": "📍 Joylashuvni yuborish",
-  "ru": "📍 Отправить локацию",
-  "en": "📍 Send location"
-},"detecting_location": {
-  "uz": "📍 Manzil aniqlanmoqda...",
-  "ru": "📍 Определение местоположения...",
-  "en": "📍 Detecting location..."
-},"location_not_found": {
-  "uz": "❌ Siz yuborgan manzil topilmadi.",
-  "ru": "❌ Отправленный вами адрес не найден.",
-  "en": "❌ The location you sent was not found."
-},"ask_destination": {
-  "uz": "✅ Sizni qayerdan olishni bildik\n\n📍 Qayerga boramiz?\nShahar nomini yozing yoki aniq manzilni belgilang. 🚗",
-  "ru": "✅ Мы узнали, откуда вас забрать\n\n📍 Куда поедем?\nВведите название города или укажите точный адрес. 🚗",
-  "en": "✅ Got your pickup location\n\n📍 Where are we going?\nEnter the city name or specify the exact destination. 🚗"
-},"trip_details": {
-  "uz": "🚗 <b>Sayohat tafsilotlari</b>:\n\n📍 <b>Yo‘nalish:</b> {loc_begin} → {loc_end}\n👤 <b>Yo‘lovchilar:</b> {passenger}\n💰 <b>Tarif:</b> {travel_class}\n💸 <b>Narx:</b> {price} so‘m\n👩 <b>Ayol yo‘lovchi:</b> {has_woman}\n\n✅ Agar hammasi to‘g‘ri bo‘lsa — <b>“Boshlash”</b> tugmasini bosing, haydovchilarimizga xabar beraman. 🚀",
+    "uz": "📍 <b>Sayohatni qayerdan boshlaymiz?</b>\n\n<b>Iltimos, aniq joylashuvingizni yuboring.</b>",
+    "en": "📍 <b>Where shall we start the trip?</b>\n\n<b>Please send your exact location.</b>",
+    "ru": "📍 <b>С чего начнём поездку?</b>\n\n<b>Пожалуйста, отправьте своё точное местоположение.</b>"
+  },
 
-  "ru": "🚗 <b>Детали поездки</b>:\n\n📍 <b>Маршрут:</b> {loc_begin} → {loc_end}\n👤 <b>Пассажиры:</b> {passenger}\n💰 <b>Тариф:</b> {travel_class}\n💸 <b>Цена:</b> {price} сум\n👩 <b>Женщина-пассажир:</b> {has_woman}\n\n✅ Если всё верно — нажмите <b>«Начать»</b>, и я уведомлю наших водителей. 🚀",
-
-  "en": "🚗 <b>Trip details</b>:\n\n📍 <b>Route:</b> {loc_begin} → {loc_end}\n👤 <b>Passengers:</b> {passenger}\n💰 <b>Class:</b> {travel_class}\n💸 <b>Price:</b> {price} UZS\n👩 <b>Female passenger:</b> {has_woman}\n\n✅ If everything looks correct — press <b>“Start”</b> and I’ll notify our drivers. 🚀"
-},"free_car": {
-  "uz": "🚖 Bo‘sh mashina",
-  "ru": "🚖 Свободная машина",
-  "en": "🚖 Free car"
-},"female_passenger": {
-  "uz": "👩 Ayol yo‘lovchi bor",
-  "ru": "👩 Есть женщина-пассажир",
-  "en": "👩 Female passenger on board"
-},"start": {
-  "uz": "🚀 Boshlash",
-  "ru": "🚀 Начать",
-  "en": "🚀 Start"
-},"searching_driver": {
-  "uz": "🚕 <b>Haydovchi izlanmoqda...</b>\n\nIltimos, biroz kuting ⏳\n\n⏱️ <i>Taxminiy kutish vaqti:</i> <b>{eta} daqiqa</b> ⌛",
-
-  "ru": "🚕 <b>Идёт поиск водителя...</b>\n\nПожалуйста, подождите немного ⏳\n\n⏱️ <i>Примерное время ожидания:</i> <b>{eta} минут</b> ⌛",
-
-  "en": "🚕 <b>Searching for a driver...</b>\n\nPlease wait a moment ⏳\n\n⏱️ <i>Estimated waiting time:</i> <b>{eta} minutes</b> ⌛"
-},"cancel": {
-  "uz": "❌ Bekor qilish",
-  "ru": "❌ Отменить",
-  "en": "❌ Cancel"
-},"only_uzbekistan": {
-  "uz": "⚠️ Kechirasiz, biz faqat <b>O‘zbekiston hududida</b> sayohatlarni amalga oshiramiz.",
-  "ru": "⚠️ Извините, мы работаем только <b>на территории Узбекистана</b>.",
-  "en": "⚠️ Sorry, we only operate <b>within Uzbekistan</b>."
-},"_help": {
-  "uz": "🆘 <b>Yordam markazi</b>\n\nAssalomu alaykum! 👋\nAgar sizda biror savol yoki muammo bo‘lsa, quyidagi yo‘nalishlardan birini tanlang:\n\n📞 <b>Aloqa:</b> qo‘llab-quvvatlash jamoamiz bilan bog‘laning.\n💳 <b>To‘lov:</b> Payme, Click yoki naqd to‘lov bilan bog‘liq savollar.\n🚗 <b>Safar:</b> buyurtma, yo‘nalish yoki haydovchi bilan bog‘liq muammolar.\n📦 <b>Pochta:</b> yuborilgan yukni kuzatish yoki yetkazib berish holatini tekshirish.\n\n📬 Biz sizga imkon qadar tez javob beramiz. Rahmat! 🙏",
-
-  "ru": "🆘 <b>Центр помощи</b>\n\nЗдравствуйте! 👋\nЕсли у вас есть вопросы или проблемы, выберите одну из категорий ниже:\n\n📞 <b>Связь:</b> свяжитесь с нашей службой поддержки.\n💳 <b>Оплата:</b> вопросы по Payme, Click или наличным платежам.\n🚗 <b>Поездка:</b> проблемы с заказом, маршрутом или водителем.\n📦 <b>Посылка:</b> отслеживание и доставка отправлений.\n\n📬 Мы ответим вам как можно скорее. Спасибо! 🙏",
-
-  "en": "🆘 <b>Help Center</b>\n\nHello! 👋\nIf you have any questions or issues, please choose one of the following options:\n\n📞 <b>Support:</b> contact our help team.\n💳 <b>Payment:</b> questions about Payme, Click, or cash payments.\n🚗 <b>Trip:</b> issues with booking, routes, or drivers.\n📦 <b>Parcel:</b> track or check the delivery status.\n\n📬 We'll get back to you as soon as possible. Thank you! 🙏"
-},"driver_found": {
-  "uz": "✨ <b>Haydovchi topildi!</b> 🚗<br><br>Quyidagi ma’lumotlarni ko‘rib chiqing:<br><br>👨‍✈️ <b>Haydovchi:</b> {name}<br>🚘 <b>Avtomobil:</b> {car}<br>⏱ <b>Yetib kelish vaqti:</b> {eta} daqiqa ichida<br><br>Iltimos, mashinani kutish joyingizda tayyor bo‘ling.",
-
-  "en": "✨ <b>Driver found!</b> 🚗<br><br>Please review the following details:<br><br>👨‍✈️ <b>Driver:</b> {name}<br>🚘 <b>Car:</b> {car}<br>⏱ <b>Estimated arrival:</b> in {eta} minutes<br><br>Please be ready at your pickup location.",
-
-  "ru": "✨ <b>Водитель найден!</b> 🚗<br><br>Проверьте следующие данные:<br><br>👨‍✈️ <b>Водитель:</b> {name}<br>🚘 <b>Автомобиль:</b> {car}<br>⏱ <b>Прибудет через:</b> {eta} минут<br><br>Пожалуйста, будьте готовы на месте посадки."
-},"call_driver": {
-  "uz": "📞 Haydovchiga qo‘ng‘iroq qilish",
-  "en": "📞 Call the driver",
-  "ru": "📞 Позвонить водителю"
-},"message_driver": {
-  "uz": "💬 Haydovchiga xabar yuborish",
-  "en": "💬 Message the driver",
-  "ru": "💬 Написать водителю"
+  "send_location": {
+    "uz": "📍 Joylashuvni yuborish",
+    "ru": "📍 Отправить локацию",
+    "en": "📍 Send location"
+  },
+  "detecting_location": {
+    "uz": "📍 Manzil aniqlanmoqda...",
+    "ru": "📍 Определение местоположения...",
+    "en": "📍 Detecting location..."
+  },
+  "location_not_found": {
+    "uz": "❌ Siz yuborgan manzil topilmadi.",
+    "ru": "❌ Отправленный вами адрес не найден.",
+    "en": "❌ The location you sent was not found."
+  },
+  "ask_destination": {
+    "uz": "✅ <b>Sizni qayerdan olishni bildik</b>\n\n📍 <b>Boshlang'ich manzil:</b> {loc_begin}\n\n📍 <b>Qayerga boramiz?</b>\nAniq manzilni belgilang. 🚗",
+    "en": "✅ <b>Got your pickup location</b>\n\n📍 <b>Starting location:</b> {loc_begin}\n\n📍 <b>Where are we going?</b>\nSpecify the exact destination. 🚗",
+    "ru": "✅ <b>Мы узнали, откуда вас забрать</b>\n\n📍 <b>Начальная точка:</b> {loc_begin}\n\n📍 <b>Куда поедем?</b>\nукажите точный адрес. 🚗"
+  },
+  "trip_details": {
+    "uz": "🚗 <b>Sayohat tafsilotlari</b>:\n\n📍 <b>Yo‘nalish:</b> {loc_begin} → {loc_end}\n👤 <b>Yo‘lovchilar:</b> {passenger}\n💰 <b>Tarif:</b> {travel_class}\n💸 <b>Narx:</b> {price} so‘m\n👩 <b>Ayol yo‘lovchi:</b> {has_woman}\n\n✅ Agar hammasi to‘g‘ri bo‘lsa — <b>“Boshlash”</b> tugmasini bosing, haydovchilarimizga xabar beraman. 🚀",
+    "ru": "🚗 <b>Детали поездки</b>:\n\n📍 <b>Маршрут:</b> {loc_begin} → {loc_end}\n👤 <b>Пассажиры:</b> {passenger}\n💰 <b>Тариф:</b> {travel_class}\n💸 <b>Цена:</b> {price} сум\n👩 <b>Женщина-пассажир:</b> {has_woman}\n\n✅ Если всё верно — нажмите <b>«Начать»</b>, и я уведомлю наших водителей. 🚀",
+    "en": "🚗 <b>Trip details</b>:\n\n📍 <b>Route:</b> {loc_begin} → {loc_end}\n👤 <b>Passengers:</b> {passenger}\n💰 <b>Class:</b> {travel_class}\n💸 <b>Price:</b> {price} UZS\n👩 <b>Female passenger:</b> {has_woman}\n\n✅ If everything looks correct — press <b>“Start”</b> and I’ll notify our drivers. 🚀"
+  },
+  "free_car": {
+    "uz": "🚖 Bo‘sh mashina",
+    "ru": "🚖 Свободная машина",
+    "en": "🚖 Free car"
+  },
+  "female_passenger": {
+    "uz": "👩 Ayol yo‘lovchi bor",
+    "ru": "👩 Есть женщина-пассажир",
+    "en": "👩 Female passenger on board"
+  },
+  "start": {
+    "uz": "🚀 Boshlash",
+    "ru": "🚀 Начать",
+    "en": "🚀 Start"
+  },
+  "searching_driver": {
+    "uz": "🚕 <b>Haydovchi izlanmoqda...</b>\n\nIltimos, biroz kuting ⏳\n\n⏱️ <i>Taxminiy kutish vaqti:</i> <b>{eta} daqiqa</b> ⌛",
+    "ru": "🚕 <b>Идёт поиск водителя...</b>\n\nПожалуйста, подождите немного ⏳\n\n⏱️ <i>Примерное время ожидания:</i> <b>{eta} минут</b> ⌛",
+    "en": "🚕 <b>Searching for a driver...</b>\n\nPlease wait a moment ⏳\n\n⏱️ <i>Estimated waiting time:</i> <b>{eta} minutes</b> ⌛"
+  },
+  "cancel": {
+    "uz": "❌ Bekor qilish",
+    "ru": "❌ Отменить",
+    "en": "❌ Cancel"
+  },
+  "only_uzbekistan": {
+    "uz": "⚠️ Kechirasiz, biz faqat <b>O‘zbekiston hududida</b> sayohatlarni amalga oshiramiz.",
+    "ru": "⚠️ Извините, мы работаем только <b>на территории Узбекистана</b>.",
+    "en": "⚠️ Sorry, we only operate <b>within Uzbekistan</b>."
+  },
+  "_help": {
+    "uz": "🆘 <b>Yordam markazi</b>\n\nAssalomu alaykum! 👋\nAgar sizda biror savol yoki muammo bo‘lsa, quyidagi yo‘nalishlardan birini tanlang:\n\n📞 <b>Aloqa:</b> qo‘llab-quvvatlash jamoamiz bilan bog‘laning.\n💳 <b>To‘lov:</b> Payme, Click yoki naqd to‘lov bilan bog‘liq savollar.\n🚗 <b>Safar:</b> buyurtma, yo‘nalish yoki haydovchi bilan bog‘liq muammolar.\n📦 <b>Pochta:</b> yuborilgan yukni kuzatish yoki yetkazib berish holatini tekshirish.\n\n📬 Biz sizga imkon qadar tez javob beramiz. Rahmat! 🙏",
+    "ru": "🆘 <b>Центр помощи</b>\n\nЗдравствуйте! 👋\nЕсли у вас есть вопросы или проблемы, выберите одну из категорий ниже:\n\n📞 <b>Связь:</b> свяжитесь с нашей службой поддержки.\n💳 <b>Оплата:</b> вопросы по Payme, Click или наличным платежам.\n🚗 <b>Поездка:</b> проблемы с заказом, маршрутом или водителем.\n📦 <b>Посылка:</b> отслеживание и доставка отправлений.\n\n📬 Мы ответим вам как можно скорее. Спасибо! 🙏",
+    "en": "🆘 <b>Help Center</b>\n\nHello! 👋\nIf you have any questions or issues, please choose one of the following options:\n\n📞 <b>Support:</b> contact our help team.\n💳 <b>Payment:</b> questions about Payme, Click, or cash payments.\n🚗 <b>Trip:</b> issues with booking, routes, or drivers.\n📦 <b>Parcel:</b> track or check the delivery status.\n\n📬 We'll get back to you as soon as possible. Thank you! 🙏"
+  },
+  "driver_found": {
+    "uz": "✨ <b>Haydovchi topildi!</b> 🚗\n\nQuyidagi ma’lumotlarni ko‘rib chiqing:\n\n👨‍✈️ <b>Haydovchi:</b> {name}\n🚘 <b>Avtomobil:</b> {car}\n⏱ <b>Yetib kelish vaqti:</b> {eta} daqiqa ichida\n\nIltimos, mashinani kutish joyingizda tayyor bo‘ling.",
+    "en": "✨ <b>Driver found!</b> 🚗\n\nPlease review the following details:\n\n👨‍✈️ <b>Driver:</b> {name}\n🚘 <b>Car:</b> {car}\n⏱ <b>Estimated arrival:</b> in {eta} minutes\n\nPlease be ready at your pickup location.",
+    "ru": "✨ <b>Водитель найден!</b> 🚗\n\nПроверьте следующие данные:\n\n👨‍✈️ <b>Водитель:</b> {name}\n🚘 <b>Автомобиль:</b> {car}\n⏱ <b>Прибудет через:</b> {eta} минут\n\nПожалуйста, будьте готовы на месте посадки."
+  },
+  "call_driver": {
+    "uz": "📞 Haydovchiga qo‘ng‘iroq qilish",
+    "en": "📞 Call the driver",
+    "ru": "📞 Позвонить водителю"
+  },
+  "message_driver": {
+    "uz": "💬 Haydovchiga xabar yuborish",
+    "en": "💬 Message the driver",
+    "ru": "💬 Написать водителю"
+  },
+  "location_details": {
+    "uz": "{count}. {place}\n🌍 {country} | {lat}, {lng}\n📍 Viloyat: {state}\n🏙️ Joy turi: {city}",
+    "en": "{count}. {place}\n🌍 {country} | {lat}, {lng}\n📍 Region: {state}\n🏙️ Place type: {city}",
+    "ru": "{count}. {place}\n🌍 {country} | {lat}, {lng}\n📍 Область: {state}\n🏙️ Тип места: {city}"
+  },"start_location_with_history": {
+  "uz": "📍 <b>Sayohatni qayerdan boshlaymiz?</b>\n\nIltimos, <b>aniq joylashuvingizni</b> yuboring yoki pastdan kerakli manzilni tanlang.\n\n🕘 <b>Avvalgi manzillaringiz:</b>\n{info}",
+  "en": "📍 <b>Where shall we start the trip?</b>\n\nPlease send your <b>exact location</b> or select a desired location from below.\n\n🕘 <b>Your previous locations:</b>\n{info}",
+  "ru": "📍 <b>С чего начнём поездку?</b>\n\nПожалуйста, отправьте своё <b>точное местоположение</b> или выберите нужное место ниже.\n\n🕘 <b>Ваши предыдущие места:</b>\n{info}"
+},"confirm_start_location": {
+  "uz": "✅ <b>Sizni qayerdan olishni bildik</b>\n\n📍 <b>Boshlang'ich manzil:</b> {loc_begin}\n\n📍 <b>Qayerga boramiz?</b>\nAniq manzilni yuboring yoki pastdan kerakli manzilni tanlang.\n\n🕘 <b>Avvalgi manzillaringiz:</b>\n{info}",
+  "en": "✅ <b>We got your pickup location</b>\n\n📍 <b>Starting location:</b> {loc_begin}\n\n📍 <b>Where are we going?</b>\nSend the exact destination or select a desired location from below.\n\n🕘 <b>Your previous locations:</b>\n{info}",
+  "ru": "✅ <b>Мы узнали, откуда вас забрать</b>\n\n📍 <b>Начальная точка:</b> {loc_begin}\n\n📍 <b>Куда поедем?</b>\nОтправьте точный адрес или выберите нужное место ниже.\n\n🕘 <b>Ваши предыдущие места:</b>\n{info}"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
